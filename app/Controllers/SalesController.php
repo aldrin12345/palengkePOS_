@@ -2,15 +2,17 @@
 
 namespace App\Controllers;
 
-use App\Models\StudentsModel;
+use App\Controllers\BaseController;
+// use App\Models\SalesModel;
 
-class StudentsController extends BaseController
+class SalesController extends BaseController
 {
-    // public function index()
-    // {   $fetchStudent = new StudentsModel();
-    //     $data['students'] = $fetchStudent->findAll();
-    //     return view('students/list',$data);
-    // }
+    public function _remap(){
+       echo "this is remap method in controller";
+    }
+    public function index(){
+        return view('sales');
+    }
     // public function createStudent()
     // {   
     //     $data['studentNumber'] = '20000_'.uniqid();
@@ -53,11 +55,11 @@ class StudentsController extends BaseController
     // {
     //     // return view('students/edit');
     // }
-    public function test2()
-    {
-        echo "this is a test";
-        // $subjects = new StudentsModel();
-        // $data['subjects'] =  $subjects->getdata();
-        // return view('test',$data);
-    }
+    // public function test2()
+    // {
+    //     echo "this is a test";
+    //     // $subjects = new StudentsModel();
+    //     // $data['subjects'] =  $subjects->getdata();
+    //     // return view('test',$data);
+    // }
 }

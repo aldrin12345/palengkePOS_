@@ -40,6 +40,8 @@ $routes->post('/students/update/(:num)','StudentsController::updateStudent/$1');
 $routes->post('/students/delete/(:num)','StudentsController::deleteStudent/$1');
 $routes->add('/test2','StudentsController::test2');
 
+$routes->get('/sales','SalesController::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
