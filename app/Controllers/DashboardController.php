@@ -5,13 +5,13 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 // use App\Models\SalesModel;
 
-class SalesController extends BaseController
+class DashboardController extends BaseController
 {
     // public function _remap(){
     //    echo "this is remap method in controller";
     // }
     public function index(){
-        return view('sales');
+        return view('dashboard');
     }
     // public function createStudent()
     // {   

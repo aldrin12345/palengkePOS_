@@ -42,6 +42,8 @@ $routes->add('/test2','StudentsController::test2');
 
 $routes->get('/sales','SalesController::index');
 
+$routes->get('/dashboard','DashboardController::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+.navbar-nav li a:hover{
+  background: #1e90ff;
+}
+.navact{
+  background:#5352ed;
+  border-radius: 5px;
+}
+.navbar-nav li a span.me-2 i{
+  font-size:25px;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+.img-cent{
+  /* border: 5px solid green; */
+  margin-left: 10%;
+  display: flex;
+  justify-content: left;
+}
+.info_tbl{
+  font-size: 25px;
+  margin: 100px;
+  
+}
+.info_tbl tr
+{
+  border-bottom: 1px solid #96D4D4;
+}
+.info_tbl tr th,
+.info_tbl tr th{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.info_tbl tr th{
+  padding-left: 2px;
+  font-size: 30px;
+}
+.print_bill{
+  display: none;
+  /* border: 1px solid green; */
+}
+
+.print_bill tr th{
+  
+  width: 300px;
+  border-bottom-color: 1px solid black;
+  padding-top: 40px;
+  
+}
+.print_bill tbody tr td{
+  /* border: 1px solid black; */
+  padding: 10px;
+  width: 50%;
+}
